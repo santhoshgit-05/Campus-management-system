@@ -1,0 +1,619 @@
+:root[data-theme="light"] {
+	color-scheme: light;
+	--app-bg: #F8FAFC;
+	--surface: #ffffff;
+	--surface-secondary: #F1F5F9;
+	--text-primary: #0F172A;
+	--text-secondary: #475569;
+	--border-color: #E2E8F0;
+}
+
+:root[data-theme="dark"] {
+	color-scheme: dark;
+	--app-bg: #0b1020;
+	--surface: #151f35;
+	--surface-secondary: #111a2e;
+	--text-primary: #f8fafc;
+	--text-secondary: #b7c2d6;
+	--border-color: #2a3853;
+}
+
+html, body, #root { min-height: 100%; color: var(--text-primary); background: var(--app-bg); }
+body { min-height: 100vh; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline-color: var(--accent); }
+
+:root[data-theme="dark"] .admin-dashboard,
+:root[data-theme="dark"] .admin-shell,
+:root[data-theme="dark"] .admin-shell-main,
+:root[data-theme="dark"] .admin-shell-content,
+:root[data-theme="dark"] .student-dashboard,
+:root[data-theme="dark"] .faculty-portal-dashboard,
+:root[data-theme="dark"] .students-page,
+:root[data-theme="dark"] .faculty-page,
+:root[data-theme="dark"] .module-page,
+:root[data-theme="dark"] .role-landing { color: var(--text-primary); background: var(--app-bg); }
+
+:root[data-theme="dark"] .admin-sidebar,
+:root[data-theme="dark"] .admin-topbar,
+:root[data-theme="dark"] .role-portal,
+:root[data-theme="dark"] .role-portal-header { color: var(--text-primary); border-color: var(--border-color); background: var(--surface-secondary); }
+:root[data-theme="dark"] .admin-sidebar-brand,
+:root[data-theme="dark"] .admin-sidebar-footer { border-color: var(--border-color); }
+:root[data-theme="dark"] .admin-sidebar-brand-copy strong,
+:root[data-theme="dark"] .admin-topbar-heading strong,
+:root[data-theme="dark"] .admin-profile-copy strong,
+:root[data-theme="dark"] .role-portal-brand strong { color: var(--text-primary); }
+:root[data-theme="dark"] .admin-sidebar-brand-copy span,
+:root[data-theme="dark"] .admin-sidebar-footer,
+:root[data-theme="dark"] .admin-topbar-heading span,
+:root[data-theme="dark"] .admin-profile-copy span,
+:root[data-theme="dark"] .role-portal-brand small { color: var(--text-secondary); }
+:root[data-theme="dark"] .admin-sidebar-section h2 { color: var(--text-secondary); }
+:root[data-theme="dark"] .admin-sidebar-link { color: var(--text-primary); }
+:root[data-theme="dark"] .admin-sidebar-link:hover,
+:root[data-theme="dark"] .admin-sidebar-link.is-active { color: var(--accent); background: var(--accent-soft); }
+:root[data-theme="dark"] .admin-icon-button,
+:root[data-theme="dark"] .admin-menu-button { color: var(--text-secondary); }
+:root[data-theme="dark"] .admin-icon-button:hover,
+:root[data-theme="dark"] .admin-menu-button:hover { border-color: var(--border-color); color: var(--accent); background: var(--accent-soft); }
+:root[data-theme="dark"] .admin-profile-avatar { border-color: var(--border-color); color: var(--accent); background: var(--accent-soft); }
+
+:root[data-theme="dark"] .dashboard-stat-card,
+:root[data-theme="dark"] .dashboard-panel,
+:root[data-theme="dark"] .student-overview-stats article,
+:root[data-theme="dark"] .student-portal-panel,
+:root[data-theme="dark"] .faculty-portal-stats article,
+:root[data-theme="dark"] .faculty-portal-panel,
+:root[data-theme="dark"] .role-landing-notice,
+:root[data-theme="dark"] .module-placeholder,
+:root[data-theme="dark"] .students-directory,
+:root[data-theme="dark"] .students-summary > div,
+:root[data-theme="dark"] .students-modal,
+:root[data-theme="dark"] .faculty-directory,
+:root[data-theme="dark"] .faculty-availability,
+:root[data-theme="dark"] .faculty-modal { border-color: var(--border-color); color: var(--text-primary); background: var(--surface); }
+
+:root[data-theme="dark"] .dashboard-welcome h1,
+:root[data-theme="dark"] .dashboard-panel-heading h2,
+:root[data-theme="dark"] .dashboard-stat-value,
+:root[data-theme="dark"] .dashboard-stat-card h2,
+:root[data-theme="dark"] .student-portal-welcome h1,
+:root[data-theme="dark"] .student-portal-panel-heading h2,
+:root[data-theme="dark"] .student-profile-grid dd,
+:root[data-theme="dark"] .student-timetable-list strong,
+:root[data-theme="dark"] .student-results-list strong,
+:root[data-theme="dark"] .student-notice strong,
+:root[data-theme="dark"] .student-campus-service strong,
+:root[data-theme="dark"] .faculty-portal-welcome h1,
+:root[data-theme="dark"] .faculty-portal-panel-heading h2,
+:root[data-theme="dark"] .faculty-portal-profile-grid dd,
+:root[data-theme="dark"] .faculty-class-card strong,
+:root[data-theme="dark"] .faculty-roster strong,
+:root[data-theme="dark"] .module-page-header h1,
+:root[data-theme="dark"] .module-placeholder h2,
+:root[data-theme="dark"] .role-landing-header h1,
+:root[data-theme="dark"] .role-landing-notice h2,
+:root[data-theme="dark"] .students-page-header h1,
+:root[data-theme="dark"] .students-directory-heading h2,
+:root[data-theme="dark"] .students-table td,
+:root[data-theme="dark"] .faculty-page-header h1,
+:root[data-theme="dark"] .faculty-directory-heading h2,
+:root[data-theme="dark"] .faculty-table td,
+:root[data-theme="dark"] .faculty-availability-heading h2 { color: var(--text-primary); }
+
+:root[data-theme="dark"] .dashboard-eyebrow,
+:root[data-theme="dark"] .dashboard-panel-kicker,
+:root[data-theme="dark"] .dashboard-welcome-copy,
+:root[data-theme="dark"] .dashboard-stat-label,
+:root[data-theme="dark"] .dashboard-stat-note,
+:root[data-theme="dark"] .dashboard-event p,
+:root[data-theme="dark"] .dashboard-announcement p,
+:root[data-theme="dark"] .dashboard-activity-copy p,
+:root[data-theme="dark"] .student-portal-kicker,
+:root[data-theme="dark"] .student-portal-welcome > div > p:last-child,
+:root[data-theme="dark"] .student-profile-grid dt,
+:root[data-theme="dark"] .student-timetable-list small,
+:root[data-theme="dark"] .student-results-list small,
+:root[data-theme="dark"] .student-panel-note,
+:root[data-theme="dark"] .student-notice p,
+:root[data-theme="dark"] .student-notice time,
+:root[data-theme="dark"] .student-campus-service p,
+:root[data-theme="dark"] .faculty-portal-kicker,
+:root[data-theme="dark"] .faculty-portal-welcome > div > p:last-child,
+:root[data-theme="dark"] .faculty-portal-profile-grid dt,
+:root[data-theme="dark"] .faculty-class-card span,
+:root[data-theme="dark"] .faculty-class-card small,
+:root[data-theme="dark"] .faculty-portal-note,
+:root[data-theme="dark"] .module-breadcrumb,
+:root[data-theme="dark"] .module-page-header > div > p:last-child,
+:root[data-theme="dark"] .module-placeholder > p,
+:root[data-theme="dark"] .students-page-header > div > p:last-child,
+:root[data-theme="dark"] .students-directory-heading p,
+:root[data-theme="dark"] .students-demo-notice,
+:root[data-theme="dark"] .faculty-page-header > div > p:last-child,
+:root[data-theme="dark"] .faculty-directory-heading p,
+:root[data-theme="dark"] .faculty-demo-notice { color: var(--text-secondary); }
+
+:root[data-theme="dark"] .students-directory-heading,
+:root[data-theme="dark"] .faculty-directory-heading { border-color: var(--border-color); }
+:root[data-theme="dark"] .students-table th,
+:root[data-theme="dark"] .faculty-table th,
+:root[data-theme="dark"] .faculty-availability-table th,
+:root[data-theme="dark"] .faculty-schedule-table th { color: #b7c2d6; background: var(--surface-secondary); }
+:root[data-theme="dark"] .students-table td,
+:root[data-theme="dark"] .faculty-table td,
+:root[data-theme="dark"] .faculty-availability-table td,
+:root[data-theme="dark"] .faculty-schedule-table td,
+:root[data-theme="dark"] .student-timetable-list article,
+:root[data-theme="dark"] .student-results-list article,
+:root[data-theme="dark"] .faculty-class-card,
+:root[data-theme="dark"] .faculty-roster label { border-color: var(--border-color); }
+:root[data-theme="dark"] .students-table tbody tr:hover { background: var(--surface-secondary); }
+
+:root[data-theme="dark"] .students-search,
+:root[data-theme="dark"] .students-filters select,
+:root[data-theme="dark"] .students-form-field input,
+:root[data-theme="dark"] .students-form-field select,
+:root[data-theme="dark"] .students-form-field textarea,
+:root[data-theme="dark"] .faculty-search,
+:root[data-theme="dark"] .faculty-filters select,
+:root[data-theme="dark"] .faculty-form-field input,
+:root[data-theme="dark"] .faculty-form-field select,
+:root[data-theme="dark"] .faculty-form-field textarea,
+:root[data-theme="dark"] .faculty-availability-heading select { border-color: var(--border-color); color: var(--text-primary); background: var(--surface-secondary); }
+:root[data-theme="dark"] .students-search input,
+:root[data-theme="dark"] .faculty-search input { color: var(--text-primary); }
+:root[data-theme="dark"] .students-search input::placeholder,
+:root[data-theme="dark"] .faculty-search input::placeholder,
+:root[data-theme="dark"] .students-form-field input::placeholder,
+:root[data-theme="dark"] .faculty-form-field input::placeholder { color: #94a3b8; }
+:root[data-theme="dark"] .students-form-field label,
+:root[data-theme="dark"] .faculty-form-field label { color: var(--text-primary); }
+:root[data-theme="dark"] .students-modal-header,
+:root[data-theme="dark"] .faculty-modal-header,
+:root[data-theme="dark"] .students-modal-footer,
+:root[data-theme="dark"] .faculty-modal-footer,
+:root[data-theme="dark"] .students-profile-heading,
+:root[data-theme="dark"] .faculty-profile-heading { border-color: var(--border-color); }
+:root[data-theme="dark"] .students-modal-header h2,
+:root[data-theme="dark"] .faculty-modal-header h2,
+:root[data-theme="dark"] .students-profile-heading h3,
+:root[data-theme="dark"] .faculty-profile-heading h3,
+:root[data-theme="dark"] .students-details-grid dd,
+:root[data-theme="dark"] .faculty-details-grid dd { color: var(--text-primary); }
+:root[data-theme="dark"] .students-modal-close,
+:root[data-theme="dark"] .students-secondary-button,
+:root[data-theme="dark"] .faculty-modal-close,
+:root[data-theme="dark"] .faculty-secondary-button,
+:root[data-theme="dark"] .module-demo-tag { border-color: var(--border-color); color: var(--text-primary); background: var(--surface-secondary); }
+
+.admin-sidebar-link.is-active,
+.role-portal-nav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
+.login-submit-button,
+.students-primary-button,
+.faculty-primary-button,
+.faculty-attendance-save { border-color: var(--accent); background: var(--accent); }
+.login-submit-button:hover,
+.students-primary-button:hover,
+.faculty-primary-button:hover,
+.faculty-attendance-save:hover { border-color: var(--accent-hover); background: var(--accent-hover); }
+.dashboard-text-link,
+.student-panel-icon,
+.student-attendance-summary strong,
+.student-campus-service,
+.faculty-portal-panel-heading { color: var(--accent); }
+.student-progress-track span { background: var(--accent); }
+.student-stat-icon { color: var(--accent); background: var(--accent-soft); }
+.student-profile-grid > div:first-child dd { color: var(--accent); }
+.login-input-group:focus-within,
+.login-role-select:focus-visible,
+.students-search:focus-within,
+.faculty-search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--focus-ring); }
+
+:root[data-theme="dark"] .dashboard-action-list a { border-color: var(--border-color); color: var(--text-primary); background: var(--surface-secondary); }
+:root[data-theme="dark"] .student-fee-status { border-color: var(--border-color); color: var(--text-primary); background: var(--surface-secondary); }
+:root[data-theme="dark"] .role-landing-notice { background: var(--surface); }
+:root[data-theme="dark"] .module-placeholder { border-color: var(--border-color); background: var(--surface); }
+
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+:root[data-theme="dark"] .page-title { color: var(--text-primary); }
+:root[data-theme="dark"] .page-subtitle { color: var(--text-secondary); }
+:root[data-theme="dark"] .students-summary-icon,
+:root[data-theme="dark"] .faculty-summary-icon { color: var(--accent); background: var(--accent-soft); }
+:root[data-theme="dark"] .student-category-badge,
+:root[data-theme="dark"] .student-status-badge,
+:root[data-theme="dark"] .faculty-status-badge { border: 1px solid var(--border-color); color: var(--text-secondary); background: var(--surface-secondary); }
+:root[data-theme="dark"] .student-status-badge.is-active,
+:root[data-theme="dark"] .faculty-status-badge.is-active { color: #86efac; border-color: rgba(34, 197, 94, 0.34); background: rgba(34, 197, 94, 0.12); }
+:root[data-theme="dark"] .student-status-badge.is-inactive,
+:root[data-theme="dark"] .faculty-status-badge.is-inactive { color: #fdba74; border-color: rgba(249, 115, 22, 0.34); background: rgba(249, 115, 22, 0.12); }
+:root[data-theme="dark"] .faculty-status-badge.is-on-leave { color: #c4b5fd; border-color: rgba(139, 92, 246, 0.34); background: rgba(139, 92, 246, 0.12); }
+:root[data-theme="dark"] .students-category-badge.is-hosteller { color: #c4b5fd; background: rgba(139, 92, 246, 0.12); }
+
+:root[data-theme="dark"] input:not([type="checkbox"]),
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] textarea { color: var(--text-primary); border-color: var(--border-color); background-color: var(--surface-secondary); }
+:root[data-theme="dark"] input::placeholder,
+:root[data-theme="dark"] textarea::placeholder { color: var(--text-secondary); }
+:root[data-theme="dark"] select option { color: var(--text-primary); background: var(--surface); }
+:root[data-theme="dark"] .students-search input,
+:root[data-theme="dark"] .faculty-search input { border-color: transparent; background: transparent; }
+:root[data-theme="dark"] .students-search,
+:root[data-theme="dark"] .faculty-search { border-color: var(--border-color); background: var(--surface-secondary); }
+:root[data-theme="dark"] .students-search input:focus-visible,
+:root[data-theme="dark"] .faculty-search input:focus-visible { outline: none; }
+
+:root[data-theme="dark"] .dashboard-stat-icon,
+:root[data-theme="dark"] .module-placeholder-icon,
+:root[data-theme="dark"] .role-landing-icon { color: var(--accent); background: var(--accent-soft); }
+:root[data-theme="dark"] .dashboard-action-list a { border-color: var(--border-color); color: var(--text-primary); background: var(--surface-secondary); }
+:root[data-theme="dark"] .dashboard-action-list a:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+:root[data-theme="dark"] .student-fee-status { color: var(--text-primary); border-color: var(--border-color); background: var(--surface-secondary); }
+:root[data-theme="dark"] .student-fee-status strong { color: var(--accent); }
+:root[data-theme="dark"] .student-results-list article > span { color: var(--accent); background: var(--accent-soft); }
+:root[data-theme="dark"] .faculty-attendance-save { border-color: var(--accent); color: #07130f; background: var(--accent); }
+:root[data-theme="dark"] .faculty-attendance-feedback { color: var(--accent); }
+:root[data-theme="dark"] .dashboard-sample-label,
+:root[data-theme="dark"] .admin-dashboard-demo,
+:root[data-theme="dark"] .student-demo-tag,
+:root[data-theme="dark"] .faculty-portal-demo,
+:root[data-theme="dark"] .faculty-portal-sample,
+:root[data-theme="dark"] .role-landing-demo { border-color: var(--border-color); color: var(--accent); background: var(--accent-soft); }
+:root[data-theme="dark"] .faculty-subject-chip.subject-logic { border-color: rgba(167, 139, 250, 0.35); color: #c4b5fd; background: rgba(139, 92, 246, 0.14); }
+:root[data-theme="dark"] .faculty-subject-chip.subject-data { border-color: rgba(96, 165, 250, 0.35); color: #93c5fd; background: rgba(59, 130, 246, 0.14); }
+:root[data-theme="dark"] .faculty-subject-chip.subject-neutral { border-color: var(--border-color); color: var(--text-secondary); background: var(--surface-secondary); }
+:root[data-theme="dark"] .attendance-chart-columns { border-color: var(--border-color); background: repeating-linear-gradient(to bottom, transparent 0, transparent 32px, rgb(148 163 184 / 12%) 33px, transparent 34px); }
+:root[data-theme="dark"] .attendance-chart-guides,
+:root[data-theme="dark"] .attendance-chart-value,
+:root[data-theme="dark"] .attendance-chart-day { color: var(--text-secondary); }
+
+:root[data-theme="dark"] .students-modal-close,
+:root[data-theme="dark"] .faculty-modal-close { border-color: var(--border-color); color: var(--text-secondary); background: var(--surface-secondary); }
+:root[data-theme="dark"] .students-secondary-button,
+:root[data-theme="dark"] .faculty-secondary-button { border-color: var(--border-color); color: var(--text-primary); background: var(--surface-secondary); }
+:root[data-theme="dark"] .students-secondary-button:hover,
+:root[data-theme="dark"] .faculty-secondary-button:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+:root[data-theme="dark"] .students-form-error,
+:root[data-theme="dark"] .faculty-form-error { border-color: #773a48; color: #fecaca; background: #351c28; }
+:root[data-theme="dark"] .students-field-error,
+:root[data-theme="dark"] .faculty-field-error { color: #fca5a5; }
+:root[data-theme="dark"] .students-feedback,
+:root[data-theme="dark"] .faculty-feedback { border-color: #27614d; color: #a7f3d0; background: #102c27; }
+:root[data-theme="dark"] .students-feedback.is-error,
+:root[data-theme="dark"] .faculty-feedback.is-error { border-color: #773a48; color: #fecaca; background: #351c28; }
+
+:root[data-theme="dark"] .login-submit-button { border-color: var(--accent); background: var(--accent); }
+:root[data-theme="dark"] .login-submit-button:hover { border-color: var(--accent-hover); background: var(--accent-hover); }
+:root[data-theme="dark"] .login-input-group:focus-within,
+:root[data-theme="dark"] .login-role-select:focus-visible,
+:root[data-theme="dark"] .students-search:focus-within,
+:root[data-theme="dark"] .faculty-search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--focus-ring); }
+
+:root[data-theme="light"] .admin-dashboard,
+:root[data-theme="light"] .admin-shell,
+:root[data-theme="light"] .admin-shell-main,
+:root[data-theme="light"] .admin-shell-content,
+:root[data-theme="light"] .student-dashboard,
+:root[data-theme="light"] .faculty-portal-dashboard,
+:root[data-theme="light"] .students-page,
+:root[data-theme="light"] .faculty-page,
+:root[data-theme="light"] .module-page,
+:root[data-theme="light"] .role-landing { color: var(--text-primary); background: var(--app-bg); }
+
+/* Dark mode text corrections: components with hardcoded text colors that ignore the active theme. */
+/* Role portal header navigation / account text */
+:root[data-theme="dark"] .role-portal-nav a { color: var(--text-primary); }
+:root[data-theme="dark"] .role-portal-user strong { color: var(--text-primary); }
+:root[data-theme="dark"] .role-portal-user small { color: var(--text-secondary); }
+
+/* Admin dashboard */
+:root[data-theme="dark"] .admin-dashboard-description { color: var(--text-secondary); }
+:root[data-theme="dark"] .admin-dashboard-detail { color: var(--text-secondary); }
+:root[data-theme="dark"] .dashboard-quick-actions h2 { color: var(--text-secondary); }
+:root[data-theme="dark"] .dashboard-event h3,
+:root[data-theme="dark"] .dashboard-announcement h3,
+:root[data-theme="dark"] .dashboard-activity-copy h3 { color: var(--text-primary); }
+:root[data-theme="dark"] .dashboard-announcement time { color: var(--text-secondary); }
+:root[data-theme="dark"] .dashboard-activity-row time { color: var(--text-secondary); }
+:root[data-theme="dark"] .dashboard-activity-period { color: var(--text-secondary); }
+:root[data-theme="dark"] .dashboard-chart-caption { color: var(--text-secondary); }
+:root[data-theme="dark"] .attendance-chart-guides { color: var(--text-secondary); }
+
+/* Module page */
+:root[data-theme="dark"] .module-breadcrumb { color: var(--text-secondary); }
+:root[data-theme="dark"] .module-page-kicker { color: var(--text-secondary); }
+:root[data-theme="dark"] .module-placeholder .module-sample-note { color: var(--text-secondary); }
+
+/* Students directory, forms, modals */
+:root[data-theme="dark"] .students-eyebrow { color: var(--text-secondary); }
+:root[data-theme="dark"] .students-demo-notice { color: var(--text-secondary); }
+:root[data-theme="dark"] .students-summary > div > span:nth-child(2) { color: var(--text-secondary); }
+:root[data-theme="dark"] .students-summary strong { color: var(--text-primary); }
+:root[data-theme="dark"] .students-directory-heading p { color: var(--text-secondary); }
+:root[data-theme="dark"] .student-name-cell small { color: var(--text-secondary); }
+:root[data-theme="dark"] .student-id-cell { color: var(--text-primary) !important; }
+:root[data-theme="dark"] .student-row-actions button { color: var(--text-secondary); }
+:root[data-theme="dark"] .students-required-note { color: var(--text-secondary); }
+:root[data-theme="dark"] .students-details-grid dt { color: var(--text-secondary); }
+:root[data-theme="dark"] .students-details-grid dd { color: var(--text-primary); }
+:root[data-theme="dark"] .students-profile-heading h3 { color: var(--text-primary); }
+:root[data-theme="dark"] .students-profile-heading p { color: var(--text-secondary); }
+:root[data-theme="dark"] .students-confirm-modal h2 { color: var(--text-primary); }
+:root[data-theme="dark"] .students-confirm-modal > p { color: var(--text-secondary); }
+:root[data-theme="dark"] .students-empty-state h3 { color: var(--text-primary); }
+:root[data-theme="dark"] .students-empty-state p { color: var(--text-secondary); }
+
+/* Faculty directory, forms, modals */
+:root[data-theme="dark"] .faculty-eyebrow { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-demo-notice { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-summary > div > span:nth-child(2) { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-summary strong { color: var(--text-primary); }
+:root[data-theme="dark"] .faculty-directory-heading p { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-name-cell small { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-id-cell { color: var(--text-primary) !important; }
+:root[data-theme="dark"] .faculty-row-actions button { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-availability-heading label { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-availability-heading > div > p:last-child { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-subject-tags > span:first-child { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-no-slots { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-required-note { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-details-grid dt { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-details-grid dd { color: var(--text-primary); }
+:root[data-theme="dark"] .faculty-profile-heading h3 { color: var(--text-primary); }
+:root[data-theme="dark"] .faculty-profile-heading p { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-confirm-modal h2 { color: var(--text-primary); }
+:root[data-theme="dark"] .faculty-confirm-modal > p { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-empty-state h3 { color: var(--text-primary); }
+:root[data-theme="dark"] .faculty-empty-state p { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-roster strong { color: var(--text-primary); }
+:root[data-theme="dark"] .faculty-roster small { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-portal-note { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-portal-stats article > strong { color: var(--text-primary); }
+:root[data-theme="dark"] .faculty-portal-stats article > span { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-portal-stats article > small { color: var(--text-secondary); }
+
+/* Role landing */
+:root[data-theme="dark"] .role-landing-kicker { color: var(--text-secondary); }
+:root[data-theme="dark"] .role-landing-notice h2 { color: var(--text-primary); }
+:root[data-theme="dark"] .role-landing-notice > div > p:last-child { color: var(--text-secondary); }
+:root[data-theme="dark"] .role-landing-session { color: var(--text-secondary); }
+:root[data-theme="dark"] .role-landing-session strong { color: var(--text-secondary); }
+
+/* Student dashboard */
+:root[data-theme="dark"] .student-portal-kicker { color: var(--text-secondary); }
+:root[data-theme="dark"] .student-overview-stats article > p { color: var(--text-secondary); }
+:root[data-theme="dark"] .student-overview-stats article > small { color: var(--text-secondary); }
+:root[data-theme="dark"] .student-attendance-summary span { color: var(--text-secondary); }
+:root[data-theme="dark"] .student-panel-note { color: var(--text-secondary); }
+:root[data-theme="dark"] .student-timetable-list small { color: var(--text-secondary); }
+:root[data-theme="dark"] .student-results-list small { color: var(--text-secondary); }
+:root[data-theme="dark"] .student-notice p { color: var(--text-secondary); }
+:root[data-theme="dark"] .student-notice time { color: var(--text-secondary); }
+:root[data-theme="dark"] .student-campus-service p { color: var(--text-secondary); }
+:root[data-theme="dark"] .student-profile-grid dd { color: var(--text-primary); }
+
+/* Faculty dashboard */
+:root[data-theme="dark"] .faculty-portal-kicker { color: var(--text-secondary); }
+:root[data-theme="dark"] .faculty-portal-stats article { color: var(--text-primary); }
+
+/* ============================================================================
+   Light mode scoped overrides: ensure correct text, background, border, input,
+   dropdown, table, modal, and navigation styling in Light Mode.
+   These use theme variables so they stay in sync with :root[data-theme="light"].
+   ============================================================================ */
+
+/* Page backgrounds and main containers */
+:root[data-theme="light"] .admin-dashboard,
+:root[data-theme="light"] .admin-shell,
+:root[data-theme="light"] .admin-shell-main,
+:root[data-theme="light"] .admin-shell-content,
+:root[data-theme="light"] .student-dashboard,
+:root[data-theme="light"] .faculty-portal-dashboard,
+:root[data-theme="light"] .students-page,
+:root[data-theme="light"] .faculty-page,
+:root[data-theme="light"] .module-page,
+:root[data-theme="light"] .role-landing,
+:root[data-theme="light"] .login-page { color: var(--text-primary); background: var(--app-bg); }
+
+/* Sidebar navigation */
+:root[data-theme="light"] .admin-sidebar { border-color: var(--border-color); background: var(--surface); }
+:root[data-theme="light"] .admin-sidebar-brand { border-color: var(--border-color); }
+:root[data-theme="light"] .admin-sidebar-brand-copy strong { color: var(--text-primary); }
+:root[data-theme="light"] .admin-sidebar-brand-copy span { color: var(--text-secondary); }
+:root[data-theme="light"] .admin-sidebar-section h2 { color: var(--text-secondary); }
+:root[data-theme="light"] .admin-sidebar-link { color: var(--text-secondary); }
+:root[data-theme="light"] .admin-sidebar-link:hover { color: var(--accent); background: var(--accent-soft); }
+:root[data-theme="light"] .admin-sidebar-link.is-active { color: var(--accent); background: var(--accent-soft); font-weight: 700; }
+:root[data-theme="light"] .admin-sidebar-footer { border-color: var(--border-color); color: var(--text-secondary); }
+:root[data-theme="light"] .admin-sidebar-close { color: var(--text-secondary); }
+
+/* Topbar navigation */
+:root[data-theme="light"] .admin-topbar { border-color: var(--border-color); }
+:root[data-theme="light"] .admin-topbar-heading strong { color: var(--text-primary); }
+:root[data-theme="light"] .admin-topbar-heading span { color: var(--text-secondary); }
+:root[data-theme="light"] .admin-icon-button,
+:root[data-theme="light"] .admin-menu-button { color: var(--text-secondary); }
+:root[data-theme="light"] .admin-icon-button:hover,
+:root[data-theme="light"] .admin-menu-button:hover { border-color: var(--border-color); color: var(--accent); background: var(--accent-soft); }
+:root[data-theme="light"] .admin-profile-avatar { border-color: var(--border-color); color: var(--accent); background: var(--accent-soft); }
+:root[data-theme="light"] .admin-profile-copy strong { color: var(--text-primary); }
+:root[data-theme="light"] .admin-profile-copy span { color: var(--text-secondary); }
+
+/* Role portal header */
+:root[data-theme="light"] .role-portal { background: var(--app-bg); }
+:root[data-theme="light"] .role-portal-header { border-color: var(--border-color); }
+:root[data-theme="light"] .role-portal-brand strong { color: var(--text-primary); }
+:root[data-theme="light"] .role-portal-brand small { color: var(--text-secondary); }
+:root[data-theme="light"] .role-portal-nav a { color: var(--text-secondary); }
+:root[data-theme="light"] .role-portal-nav a:hover,
+:root[data-theme="light"] .role-portal-nav a:focus-visible { color: var(--accent); background: var(--accent-soft); }
+:root[data-theme="light"] .role-portal-user strong { color: var(--text-primary); }
+:root[data-theme="light"] .role-portal-user small { color: var(--text-secondary); }
+:root[data-theme="light"] .role-portal-account button { border-color: var(--border-color); color: var(--text-secondary); background: var(--surface); }
+:root[data-theme="light"] .role-portal-account button:hover { border-color: var(--border-color); color: var(--accent); background: var(--accent-soft); }
+
+/* Form labels, inputs, selects, dropdowns */
+:root[data-theme="light"] .students-form-field label,
+:root[data-theme="light"] .faculty-form-field label { color: var(--text-secondary); }
+:root[data-theme="light"] .students-form-field input,
+:root[data-theme="light"] .students-form-field select,
+:root[data-theme="light"] .students-form-field textarea,
+:root[data-theme="light"] .faculty-form-field input,
+:root[data-theme="light"] .faculty-form-field select,
+:root[data-theme="light"] .faculty-form-field textarea { color: var(--text-primary); background: var(--surface); border-color: var(--border-color); }
+:root[data-theme="light"] .students-form-field input::placeholder,
+:root[data-theme="light"] .students-form-field textarea::placeholder,
+:root[data-theme="light"] .faculty-form-field input::placeholder,
+:root[data-theme="light"] .faculty-form-field textarea::placeholder { color: #94a3b8; }
+:root[data-theme="light"] .students-filters select,
+:root[data-theme="light"] .faculty-filters select { color: var(--text-primary); background: var(--surface); border-color: var(--border-color); }
+:root[data-theme="light"] .students-search,
+:root[data-theme="light"] .faculty-search { border-color: var(--border-color); background: var(--surface); }
+:root[data-theme="light"] .students-search input,
+:root[data-theme="light"] .faculty-search input { color: var(--text-primary); }
+:root[data-theme="light"] .students-search input::placeholder,
+:root[data-theme="light"] .faculty-search input::placeholder { color: #94a3b8; }
+
+/* Table headings and body text */
+:root[data-theme="light"] .students-table th { color: var(--text-secondary); background: var(--surface-secondary); }
+:root[data-theme="light"] .students-table td { color: var(--text-primary); border-color: var(--border-color); }
+:root[data-theme="light"] .students-table tbody tr:hover { background: var(--accent-soft); }
+:root[data-theme="light"] .faculty-table th { color: var(--text-secondary); background: var(--surface-secondary); }
+:root[data-theme="light"] .faculty-table td { color: var(--text-primary); border-color: var(--border-color); }
+:root[data-theme="light"] .faculty-table tbody tr:hover { background: var(--accent-soft); }
+:root[data-theme="light"] .faculty-availability-table th { color: var(--text-secondary); background: var(--surface-secondary); }
+:root[data-theme="light"] .faculty-availability-table td { color: var(--text-primary); border-color: var(--border-color); }
+:root[data-theme="light"] .faculty-schedule-table th { color: var(--text-secondary); background: var(--surface-secondary); }
+:root[data-theme="light"] .faculty-schedule-table td { color: var(--text-primary); border-color: var(--border-color); }
+
+/* Cards and panels */
+:root[data-theme="light"] .dashboard-stat-card,
+:root[data-theme="light"] .dashboard-panel,
+:root[data-theme="light"] .student-overview-stats article,
+:root[data-theme="light"] .student-portal-panel,
+:root[data-theme="light"] .faculty-portal-stats article,
+:root[data-theme="light"] .faculty-portal-panel,
+:root[data-theme="light"] .students-directory,
+:root[data-theme="light"] .students-summary > div,
+:root[data-theme="light"] .faculty-directory,
+:root[data-theme="light"] .faculty-availability,
+:root[data-theme="light"] .role-landing-notice,
+:root[data-theme="light"] .module-placeholder { border-color: var(--border-color); color: var(--text-primary); background: var(--surface); }
+
+/* Modals and popups */
+:root[data-theme="light"] .students-modal,
+:root[data-theme="light"] .faculty-modal { border-color: var(--border-color); color: var(--text-primary); background: var(--surface); box-shadow: 0 18px 60px rgb(15 23 42 / 12%); }
+:root[data-theme="light"] .students-modal-header,
+:root[data-theme="light"] .faculty-modal-header,
+:root[data-theme="light"] .students-modal-footer,
+:root[data-theme="light"] .faculty-modal-footer { border-color: var(--border-color); }
+:root[data-theme="light"] .students-modal-header h2,
+:root[data-theme="light"] .faculty-modal-header h2 { color: var(--text-primary); }
+:root[data-theme="light"] .students-profile-heading h3,
+:root[data-theme="light"] .faculty-profile-heading h3 { color: var(--text-primary); }
+:root[data-theme="light"] .students-profile-heading p,
+:root[data-theme="light"] .faculty-profile-heading p { color: var(--text-secondary); }
+:root[data-theme="light"] .students-modal-close,
+:root[data-theme="light"] .faculty-modal-close { border-color: var(--border-color); color: var(--text-secondary); background: var(--surface); }
+:root[data-theme="light"] .students-modal-close:hover,
+:root[data-theme="light"] .faculty-modal-close:hover { color: var(--accent); background: var(--accent-soft); }
+:root[data-theme="light"] .students-secondary-button,
+:root[data-theme="light"] .faculty-secondary-button { border-color: var(--border-color); color: var(--text-secondary); background: var(--surface); }
+:root[data-theme="light"] .students-secondary-button:hover,
+:root[data-theme="light"] .faculty-secondary-button:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+
+/* Badges, notifications, feedback */
+:root[data-theme="light"] .student-category-badge,
+:root[data-theme="light"] .student-status-badge,
+:root[data-theme="light"] .faculty-status-badge { border-color: var(--border-color); color: var(--text-secondary); background: var(--surface-secondary); }
+:root[data-theme="light"] .student-feedback,
+:root[data-theme="light"] .faculty-feedback { border-color: var(--border-color); color: var(--text-primary); background: var(--surface-secondary); }
+:root[data-theme="light"] .students-feedback.is-error,
+:root[data-theme="light"] .faculty-feedback.is-error { border-color: #773a48; color: #b91c1c; background: #fdf2f2; }
+:root[data-theme="light"] .students-field-error,
+:root[data-theme="light"] .faculty-field-error { color: #b91c1c; }
+:root[data-theme="light"] .students-form-error,
+:root[data-theme="light"] .faculty-form-error { border-color: #fca5a5; color: #b91c1c; background: #fff1f2; }
+:root[data-theme="light"] .students-form-field.has-error input,
+:root[data-theme="light"] .students-form-field.has-error select,
+:root[data-theme="light"] .faculty-form-field.has-error input,
+:root[data-theme="light"] .faculty-form-field.has-error select { border-color: #fca5a5; }
+
+/* Secondary text and disabled elements */
+:root[data-theme="light"] .dashboard-eyebrow,
+:root[data-theme="light"] .dashboard-panel-kicker,
+:root[data-theme="light"] .dashboard-welcome-copy,
+:root[data-theme="light"] .dashboard-stat-label,
+:root[data-theme="light"] .dashboard-stat-note,
+:root[data-theme="light"] .dashboard-event p,
+:root[data-theme="light"] .dashboard-announcement p,
+:root[data-theme="light"] .dashboard-activity-copy p,
+:root[data-theme="light"] .student-portal-kicker,
+:root[data-theme="light"] .student-portal-welcome > div > p:last-child,
+:root[data-theme="light"] .student-profile-grid dt,
+:root[data-theme="light"] .student-timetable-list small,
+:root[data-theme="light"] .student-results-list small,
+:root[data-theme="light"] .student-panel-note,
+:root[data-theme="light"] .student-notice p,
+:root[data-theme="light"] .student-notice time,
+:root[data-theme="light"] .student-campus-service p,
+:root[data-theme="light"] .faculty-portal-kicker,
+:root[data-theme="light"] .faculty-portal-welcome > div > p:last-child,
+:root[data-theme="light"] .faculty-portal-profile-grid dt,
+:root[data-theme="light"] .faculty-class-card span,
+:root[data-theme="light"] .faculty-class-card small,
+:root[data-theme="light"] .faculty-portal-note,
+:root[data-theme="light"] .module-breadcrumb,
+:root[data-theme="light"] .module-page-header > div > p:last-child,
+:root[data-theme="light"] .module-placeholder > p,
+:root[data-theme="light"] .students-page-header > div > p:last-child,
+:root[data-theme="light"] .students-directory-heading p,
+:root[data-theme="light"] .students-demo-notice,
+:root[data-theme="light"] .faculty-page-header > div > p:last-child,
+:root[data-theme="light"] .faculty-directory-heading p,
+:root[data-theme="light"] .faculty-demo-notice { color: var(--text-secondary); }
+
+:root[data-theme="light"] .student-name-cell small,
+:root[data-theme="light"] .student-section,
+:root[data-theme="light"] .faculty-name-cell small,
+:root[data-theme="light"] .faculty-roster small,
+:root[data-theme="light"] .students-details-grid dt,
+:root[data-theme="light"] .faculty-details-grid dt,
+:root[data-theme="light"] .faculty-subject-tags > span:first-child,
+:root[data-theme="light"] .faculty-no-slots,
+:root[data-theme="light"] .faculty-required-note,
+:root[data-theme="light"] .students-required-note,
+:root[data-theme="light"] .student-row-actions button,
+:root[data-theme="light"] .faculty-row-actions button,
+:root[data-theme="light"] .canteen-food-item,
+:root[data-theme="light"] .library-book-item,
+:root[data-theme="light"] .transport-route-item { color: var(--text-secondary); }
+
+:root[data-theme="light"] .students-clear-button:disabled,
+:root[data-theme="light"] .faculty-clear-button:disabled { color: #94a3b8; cursor: default; }
+
+/* Focus indicators */
+:root[data-theme="light"] .students-search:focus-within,
+:root[data-theme="light"] .faculty-search:focus-within,
+:root[data-theme="light"] .students-filters select:focus,
+:root[data-theme="light"] .faculty-filters select:focus,
+:root[data-theme="light"] .students-form-field input:focus,
+:root[data-theme="light"] .students-form-field select:focus,
+:root[data-theme="light"] .students-form-field textarea:focus,
+:root[data-theme="light"] .faculty-form-field input:focus,
+:root[data-theme="light"] .faculty-form-field select:focus,
+:root[data-theme="light"] .faculty-form-field textarea:focus { border-color: var(--accent); outline: 2px solid var(--focus-ring); }
+
+:root[data-theme="light"] .students-empty-state > div { color: #71858b; background: #f0f4f4; }
+:root[data-theme="light"] .students-empty-state h3 { color: #3a5058; }
+:root[data-theme="light"] .students-empty-state p { color: #819096; }
+:root[data-theme="light"] .faculty-empty-state > div { color: #71858b; background: #f0f4f4; }
+:root[data-theme="light"] .faculty-empty-state h3 { color: #3a5058; }
+:root[data-theme="light"] .faculty-empty-state p { color: #819096; }
+
+/* Theme toggle light mode */
+:root[data-theme="light"] .theme-switch { border-color: var(--border-color); color: var(--text-secondary); background: var(--surface-secondary); }
+:root[data-theme="light"] .theme-switch:hover { border-color: var(--accent); }

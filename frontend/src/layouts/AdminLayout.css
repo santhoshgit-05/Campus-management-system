@@ -1,0 +1,29 @@
+.admin-shell {
+	min-height: 100vh;
+}
+
+.admin-shell-main {
+	min-height: 100vh;
+	margin-left: 264px;
+}
+
+.admin-shell-content {
+	min-height: calc(100vh - 68px);
+	padding: 28px 30px 42px;
+}
+
+@media (max-width: 900px) {
+	.admin-shell-main {
+		margin-left: 0;
+	}
+
+	.admin-shell-content {
+		padding: 24px 20px 36px;
+	}
+}
+
+@media (max-width: 560px) {
+	.admin-shell-content {
+		padding: 20px 14px 30px;
+	}
+}

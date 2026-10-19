@@ -1,0 +1,52 @@
+.student-dashboard { max-width: 1180px; margin: 0 auto; color: #293d45; }
+.student-portal-welcome, .student-portal-panel-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.student-portal-welcome { margin-bottom: 20px; }
+.student-portal-kicker { color: #71828a; font-size: 9px; font-weight: 800; letter-spacing: 1px; }
+.student-portal-welcome h1 { margin-top: 7px; color: #1b3038; font-size: 26px; }
+.student-portal-welcome > div > p:last-child { margin-top: 6px; color: #73818a; font-size: 12px; }
+.student-demo-tag { padding: 7px 9px; border: 1px solid #d8e8e3; border-radius: 4px; color: #28675e; background: #f1f8f5; font-size: 9px; white-space: nowrap; }
+.student-overview-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 14px; }
+.student-overview-stats article, .student-portal-panel { min-width: 0; border: 1px solid #e1e7eb; border-radius: 6px; background: #fff; }
+.student-overview-stats article { min-height: 125px; padding: 15px; }
+.student-stat-icon { display: grid; width: 31px; height: 31px; place-items: center; border-radius: 5px; color: #26765b; background: #e8f4ed; }
+.student-stat-icon.is-blue { color: #3d698b; background: #eaf2f7; }
+.student-stat-icon.is-orange { color: #a26b36; background: #fbf1e5; }
+.student-overview-stats article > p { margin-top: 10px; color: #718087; font-size: 10px; }
+.student-overview-stats article > strong { display: inline-block; margin-top: 3px; color: #293d45; font-size: 22px; }
+.student-overview-stats article > small { margin-left: 8px; color: #87939a; font-size: 8px; }
+.student-dashboard-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.student-portal-panel { padding: 16px; scroll-margin-top: 90px; }
+.student-portal-panel-heading { align-items: center; margin-bottom: 14px; }
+.student-portal-panel-heading h2 { margin-top: 5px; color: #30454d; font-size: 13px; }
+.student-panel-icon { flex: 0 0 auto; color: #50857c; }
+.student-profile-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
+.student-profile-grid dt { color: #87939a; font-size: 8px; }
+.student-profile-grid dd { margin-top: 4px; color: #3e545b; font-size: 10px; }
+.student-attendance-summary { display: flex; align-items: baseline; gap: 8px; }
+.student-attendance-summary strong { color: #2e765e; font-size: 28px; }
+.student-attendance-summary span { color: #77868a; font-size: 10px; }
+.student-progress-track { height: 7px; overflow: hidden; margin-top: 11px; border-radius: 4px; background: #e8eeec; }
+.student-progress-track span { display: block; height: 100%; border-radius: inherit; background: #4d9a7d; }
+.student-panel-note { margin-top: 11px; color: #89969a; font-size: 8px; line-height: 1.6; }
+.student-timetable-list, .student-results-list { display: grid; }
+.student-timetable-list article { display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 10px; padding: 9px 0; border-top: 1px solid #edf0f1; }
+.student-timetable-list time { color: #408076; font-size: 9px; font-weight: 700; }
+.student-timetable-list strong, .student-results-list strong { display: block; color: #40555c; font-size: 9px; }
+.student-timetable-list small, .student-results-list small { display: block; margin-top: 4px; color: #89969a; font-size: 8px; }
+.student-results-list article { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 9px 0; border-top: 1px solid #edf0f1; }
+.student-results-list article > span { display: grid; min-width: 26px; min-height: 26px; place-items: center; border-radius: 50%; color: #326c5b; background: #e9f4ee; font-size: 9px; font-weight: 800; }
+.student-fee-status { display: flex; align-items: center; justify-content: space-between; padding: 11px 12px; border: 1px solid #dcece2; border-radius: 5px; color: #536a5c; background: #f4faf6; font-size: 10px; }
+.student-fee-status strong { color: #327153; }
+.student-notice { padding: 2px 0 10px; }
+.student-notice + .student-notice { padding-top: 10px; border-top: 1px solid #edf0f1; }
+.student-notice strong { color: #40555c; font-size: 9px; }
+.student-notice p { margin-top: 4px; color: #7c8a8f; font-size: 9px; line-height: 1.5; }
+.student-notice time { display: block; margin-top: 5px; color: #9aa4a7; font-size: 8px; }
+.student-campus-panel { grid-column: 1 / -1; }
+.student-campus-service { display: flex; align-items: flex-start; gap: 9px; padding: 8px 0; color: #438077; }
+.student-campus-service + .student-campus-service { border-top: 1px solid #edf0f1; }
+.student-campus-service > svg { flex: 0 0 auto; margin-top: 1px; }
+.student-campus-service strong { color: #40555c; font-size: 9px; }
+.student-campus-service p { margin-top: 4px; color: #839096; font-size: 8px; }
+@media (max-width: 760px) { .student-dashboard-grid { grid-template-columns: minmax(0, 1fr); } .student-campus-panel { grid-column: auto; } }
+@media (max-width: 520px) { .student-portal-welcome { align-items: flex-start; flex-direction: column; gap: 10px; } .student-portal-welcome h1 { font-size: 23px; } .student-overview-stats { grid-template-columns: minmax(0, 1fr); } .student-overview-stats article { min-height: 108px; } .student-portal-panel { padding: 13px; } .student-profile-grid { gap: 13px 9px; } }

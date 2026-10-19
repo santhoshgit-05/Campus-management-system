@@ -1,0 +1,136 @@
+.admin-topbar {
+	position: sticky;
+	top: 0;
+	z-index: 20;
+	display: flex;
+	min-height: 68px;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 0 30px;
+	border-bottom: 1px solid #e5e9ef;
+	background: rgb(255 255 255 / 96%);
+}
+
+.admin-topbar-leading,
+.admin-topbar-actions,
+.admin-profile {
+	display: flex;
+	align-items: center;
+}
+
+.admin-topbar-leading {
+	gap: 14px;
+}
+
+.admin-topbar-heading {
+	display: grid;
+	gap: 3px;
+}
+
+.admin-topbar-heading span {
+	color: #86929a;
+	font-size: 10px;
+}
+
+.admin-topbar-heading strong {
+	color: #293943;
+	font-size: 12px;
+}
+
+.admin-topbar-actions {
+	gap: 17px;
+}
+
+.admin-icon-button,
+.admin-menu-button {
+	position: relative;
+	display: grid;
+	width: 36px;
+	height: 36px;
+	flex: 0 0 auto;
+	place-items: center;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	color: #64737c;
+	background: transparent;
+}
+
+.admin-icon-button:hover,
+.admin-menu-button:hover {
+	border-color: #e1e8e9;
+	color: #176b66;
+	background: #f3f8f7;
+}
+
+.admin-notifications-button span {
+	position: absolute;
+	top: 7px;
+	right: 7px;
+	width: 6px;
+	height: 6px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	background: #dc785b;
+}
+
+.admin-profile {
+	gap: 9px;
+}
+
+.admin-profile-avatar {
+	display: grid;
+	width: 34px;
+	height: 34px;
+	place-items: center;
+	border: 1px solid #c9e0dc;
+	border-radius: 50%;
+	color: #176b66;
+	background: #e7f2ef;
+	font-size: 11px;
+	font-weight: 800;
+}
+
+.admin-profile-copy {
+	display: grid;
+	gap: 3px;
+}
+
+.admin-profile-copy strong {
+	color: #32424b;
+	font-size: 11px;
+}
+
+.admin-profile-copy span {
+	color: #87939a;
+	font-size: 10px;
+}
+
+.admin-menu-button {
+	display: none;
+}
+
+@media (max-width: 900px) {
+	.admin-menu-button {
+		display: grid;
+	}
+
+	.admin-topbar {
+		padding: 0 20px;
+	}
+}
+
+@media (max-width: 560px) {
+	.admin-topbar {
+		min-height: 62px;
+		padding: 0 12px;
+	}
+
+	.admin-topbar-actions {
+		gap: 8px;
+	}
+
+	.admin-profile-copy {
+		display: none;
+	}
+}

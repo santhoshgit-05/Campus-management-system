@@ -1,0 +1,150 @@
+.admin-sidebar {
+	position: fixed;
+	inset: 0 auto 0 0;
+	z-index: 30;
+	display: flex;
+	width: 264px;
+	flex-direction: column;
+	border-right: 1px solid #e3e8ef;
+	background: #fff;
+}
+
+.admin-sidebar-brand {
+	display: flex;
+	min-height: 76px;
+	align-items: center;
+	gap: 11px;
+	padding: 0 20px;
+	border-bottom: 1px solid #edf0f4;
+}
+
+.admin-sidebar-mark {
+	display: grid;
+	width: 36px;
+	height: 36px;
+	flex: 0 0 auto;
+	place-items: center;
+	border-radius: 9px;
+	color: #fff;
+	background: #176b66;
+	font-size: 17px;
+	font-weight: 800;
+}
+
+.admin-sidebar-brand-copy {
+	display: grid;
+	gap: 2px;
+}
+
+.admin-sidebar-brand-copy strong {
+	color: #152c35;
+	font-size: 14px;
+}
+
+.admin-sidebar-brand-copy span {
+	color: #77858d;
+	font-size: 11px;
+}
+
+.admin-sidebar-close {
+	display: none;
+	margin-left: auto;
+	padding: 7px;
+	border: 0;
+	color: #52616b;
+	background: transparent;
+}
+
+.admin-sidebar-nav {
+	flex: 1;
+	overflow-y: auto;
+	padding: 15px 12px 20px;
+}
+
+.admin-sidebar-section + .admin-sidebar-section {
+	margin-top: 20px;
+}
+
+.admin-sidebar-section h2 {
+	margin: 0 8px 8px;
+	color: #929da4;
+	font-size: 10px;
+	font-weight: 800;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+}
+
+.admin-sidebar-link {
+	display: flex;
+	min-height: 36px;
+	align-items: center;
+	gap: 11px;
+	margin: 2px 0;
+	padding: 0 9px;
+	border-radius: 5px;
+	color: #53636d;
+	font-size: 12px;
+	transition: background 120ms ease, color 120ms ease;
+}
+
+.admin-sidebar-link:hover {
+	color: #145f5a;
+	background: #f1f7f6;
+}
+
+.admin-sidebar-link.is-active {
+	color: #145f5a;
+	background: #e8f3f1;
+	font-weight: 700;
+}
+
+.admin-sidebar-link svg {
+	flex: 0 0 auto;
+}
+
+.admin-sidebar-footer {
+	display: flex;
+	min-height: 48px;
+	align-items: center;
+	gap: 9px;
+	padding: 0 21px;
+	border-top: 1px solid #edf0f4;
+	color: #75838c;
+	font-size: 11px;
+}
+
+.admin-sidebar-status {
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #38a57b;
+}
+
+.admin-sidebar-backdrop {
+	display: none;
+}
+
+@media (max-width: 900px) {
+	.admin-sidebar {
+		transform: translateX(-100%);
+		transition: transform 180ms ease;
+	}
+
+	.admin-sidebar.is-open {
+		transform: translateX(0);
+	}
+
+	.admin-sidebar-close {
+		display: grid;
+		place-items: center;
+	}
+
+	.admin-sidebar-backdrop {
+		position: fixed;
+		inset: 0;
+		z-index: 29;
+		display: block;
+		border: 0;
+		background: rgb(17 32 42 / 38%);
+	}
+}

@@ -1,0 +1,20 @@
+.role-portal { min-height: 100vh; color: #2b4049; background: #f5f8f8; }
+.role-portal-skip { position: absolute; left: -10000px; padding: 8px; background: #fff; }
+.role-portal-skip:focus { top: 8px; left: 8px; z-index: 100; }
+.role-portal-header { position: sticky; top: 0; z-index: 10; display: flex; min-height: 68px; align-items: center; gap: 22px; padding: 0 24px; border-bottom: 1px solid #e1e9e8; background: rgb(255 255 255 / 97%); }
+.role-portal-brand { display: flex; flex: 0 0 auto; align-items: center; gap: 9px; }
+.role-portal-brand-mark { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 8px; color: #fff; background: #176b66; font-size: 16px; font-weight: 800; }
+.role-portal-brand > span:last-child { display: grid; gap: 2px; }
+.role-portal-brand strong { color: #263d44; font-size: 12px; }
+.role-portal-brand small { color: #7b8a8f; font-size: 9px; }
+.role-portal-nav { display: flex; min-width: 0; flex: 1; align-items: center; gap: 3px; overflow-x: auto; }
+.role-portal-nav a { display: inline-flex; min-height: 34px; flex: 0 0 auto; align-items: center; gap: 6px; padding: 0 8px; border-radius: 5px; color: #65757a; font-size: 9px; }
+.role-portal-nav a:hover, .role-portal-nav a:focus-visible { color: #176b66; background: #edf6f3; outline: none; }
+.role-portal-account { display: flex; flex: 0 0 auto; align-items: center; gap: 11px; }
+.role-portal-user { display: grid; gap: 3px; text-align: right; }
+.role-portal-user strong, .role-portal-user small { color: #718087; font-size: 9px; }
+.role-portal-account button { display: inline-flex; min-height: 34px; align-items: center; gap: 6px; padding: 0 9px; border: 1px solid #dbe5e5; border-radius: 5px; color: #52656b; background: #fff; font-size: 9px; }
+.role-portal-account button:hover { border-color: #b7d2cc; color: #176b66; background: #f5faf8; }
+.role-portal-content { max-width: 1360px; margin: 0 auto; padding: 28px clamp(16px, 3vw, 36px) 44px; }
+@media (max-width: 1020px) { .role-portal-header { flex-wrap: wrap; gap: 8px 14px; padding: 9px 16px; } .role-portal-brand { order: 0; } .role-portal-account { order: 1; margin-left: auto; } .role-portal-nav { order: 2; flex-basis: 100%; } }
+@media (max-width: 520px) { .role-portal-header { gap: 7px; padding: 8px 11px; } .role-portal-content { padding: 19px 13px 30px; } .role-portal-account { gap: 7px; } .role-portal-account button { width: 34px; justify-content: center; padding: 0; } .role-portal-account button span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); } .role-portal-user small { max-width: 94px; overflow: hidden; text-overflow: ellipsis; } .role-portal-nav { gap: 1px; } }

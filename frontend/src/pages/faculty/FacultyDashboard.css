@@ -1,0 +1,48 @@
+.faculty-portal-dashboard { max-width: 1180px; margin: 0 auto; color: #293d45; }
+.faculty-portal-welcome, .faculty-portal-panel-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.faculty-portal-welcome { margin-bottom: 20px; }
+.faculty-portal-kicker { color: #71828a; font-size: 9px; font-weight: 800; letter-spacing: 1px; }
+.faculty-portal-welcome h1 { margin-top: 7px; color: #1b3038; font-size: 26px; }
+.faculty-portal-welcome > div > p:last-child { margin-top: 6px; color: #73818a; font-size: 12px; }
+.faculty-portal-demo, .faculty-portal-sample { padding: 7px 9px; border: 1px solid #d8e8e3; border-radius: 4px; color: #28675e; background: #f1f8f5; font-size: 9px; white-space: nowrap; }
+.faculty-portal-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 14px; }
+.faculty-portal-stats article, .faculty-portal-panel { min-width: 0; border: 1px solid #e1e7eb; border-radius: 6px; background: #fff; }
+.faculty-portal-stats article { display: grid; min-height: 112px; grid-template-columns: 30px 1fr; align-content: center; align-items: center; gap: 3px 9px; padding: 14px; color: #478178; }
+.faculty-portal-stats article > span { color: #718087; font-size: 9px; }
+.faculty-portal-stats article > strong { grid-column: 2; color: #293d45; font-size: 22px; }
+.faculty-portal-stats article > small { grid-column: 2; color: #87939a; font-size: 8px; }
+.faculty-portal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.faculty-portal-panel { padding: 16px; scroll-margin-top: 100px; }
+.faculty-portal-panel-heading { align-items: center; margin-bottom: 14px; color: #50857c; }
+.faculty-portal-panel-heading h2 { margin-top: 5px; color: #30454d; font-size: 13px; }
+.faculty-portal-profile-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.faculty-portal-profile-grid dt { color: #87939a; font-size: 8px; }
+.faculty-portal-profile-grid dd { margin-top: 4px; color: #3e545b; font-size: 10px; }
+.faculty-class-card { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 0; border-top: 1px solid #edf0f1; }
+.faculty-class-card strong { color: #40555c; font-size: 10px; }
+.faculty-class-card span, .faculty-class-card small { color: #7e8d92; font-size: 8px; }
+.faculty-subject-chip { display: inline-flex; width: fit-content; align-items: center; padding: 4px 7px; border: 1px solid transparent; border-radius: 4px; font-size: 8px; font-weight: 700; }
+.faculty-subject-chip.subject-logic { color: #6841b8; border-color: #e2d9f4; background: #f2edfb; }
+.faculty-subject-chip.subject-data { color: #28618c; border-color: #d5e5f0; background: #edf5fa; }
+.faculty-subject-chip.subject-neutral { color: #53656c; border-color: #dbe3e6; background: #f3f6f7; }
+.faculty-schedule-panel, .faculty-attendance-panel { grid-column: 1 / -1; }
+.faculty-schedule-scroll { width: 100%; overflow-x: auto; contain: paint; }
+.faculty-schedule-table { width: 100%; min-width: 600px; border-collapse: collapse; text-align: left; }
+.faculty-schedule-table th { height: 32px; color: #839198; background: #fafbfb; font-size: 8px; text-transform: uppercase; }
+.faculty-schedule-table td { height: 37px; border-top: 1px solid #edf0f1; color: #566970; font-size: 9px; }
+.faculty-schedule-table th, .faculty-schedule-table td { padding: 0 9px; white-space: nowrap; }
+.faculty-portal-note { color: #89969a; font-size: 8px; line-height: 1.6; }
+.faculty-roster { display: grid; margin-top: 10px; }
+.faculty-roster label { display: grid; grid-template-columns: minmax(0, 1fr) 18px 50px; align-items: center; gap: 9px; padding: 9px 0; border-top: 1px solid #edf0f1; }
+.faculty-roster label > span:first-child { display: grid; gap: 4px; }
+.faculty-roster strong { color: #40555c; font-size: 9px; }
+.faculty-roster small { color: #89969a; font-size: 8px; }
+.faculty-roster input { width: 15px; height: 15px; accent-color: #28786d; }
+.faculty-roster label > span:last-child { font-size: 8px; text-align: right; }
+.faculty-roster .is-present { color: #347657; }
+.faculty-roster .is-absent { color: #a15c4a; }
+.faculty-attendance-save { min-height: 34px; margin-top: 12px; padding: 0 11px; border: 1px solid #176b66; border-radius: 5px; color: #fff; background: #176b66; font-size: 9px; font-weight: 700; }
+.faculty-attendance-save:hover { background: #125b56; }
+.faculty-attendance-feedback { display: inline-block; margin-left: 10px; color: #347657; font-size: 9px; }
+@media (max-width: 760px) { .faculty-portal-grid { grid-template-columns: minmax(0, 1fr); } .faculty-schedule-panel, .faculty-attendance-panel { grid-column: auto; } }
+@media (max-width: 520px) { .faculty-portal-welcome { align-items: flex-start; flex-direction: column; gap: 10px; } .faculty-portal-welcome h1 { font-size: 23px; } .faculty-portal-stats { grid-template-columns: minmax(0, 1fr); } .faculty-portal-stats article { min-height: 94px; } .faculty-portal-panel { padding: 13px; } .faculty-portal-profile-grid { gap: 13px 9px; } .faculty-class-card { align-items: flex-start; flex-direction: column; } }

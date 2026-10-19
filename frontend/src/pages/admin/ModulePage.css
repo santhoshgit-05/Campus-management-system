@@ -1,0 +1,105 @@
+.module-page {
+	max-width: 1180px;
+	margin: 0 auto;
+	color: #253841;
+}
+
+.module-breadcrumb {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: #849198;
+	font-size: 10px;
+}
+
+.module-breadcrumb a { color: #34766e; }
+.module-breadcrumb a:hover { text-decoration: underline; }
+
+.module-page-header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 20px;
+	margin: 21px 0 24px;
+}
+
+.module-page-kicker {
+	color: #71828a;
+	font-size: 9px;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+
+.module-page-header h1 { margin-top: 7px; color: #1b3038; font-size: 26px; }
+
+.module-page-header > div > p:last-child {
+	max-width: 650px;
+	margin-top: 7px;
+	color: #73818a;
+	font-size: 12px;
+	line-height: 1.6;
+}
+
+.module-demo-tag {
+	padding: 7px 9px;
+	border: 1px solid #e3e8ea;
+	border-radius: 4px;
+	color: #718087;
+	background: #fff;
+	font-size: 9px;
+	white-space: nowrap;
+}
+
+.module-placeholder {
+	display: flex;
+	min-height: 300px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 34px 24px;
+	border: 1px solid #e1e7eb;
+	border-radius: 6px;
+	background: #fff;
+	text-align: center;
+}
+
+.module-placeholder-icon {
+	display: grid;
+	width: 46px;
+	height: 46px;
+	place-items: center;
+	margin-bottom: 16px;
+	border-radius: 8px;
+	color: #28786d;
+	background: #e9f3f0;
+}
+
+.module-placeholder h2 { margin-top: 8px; color: #30454d; font-size: 17px; }
+
+.module-placeholder > p:not(.module-page-kicker) {
+	max-width: 450px;
+	margin-top: 8px;
+	color: #73818a;
+	font-size: 11px;
+	line-height: 1.65;
+}
+
+.module-placeholder .module-sample-note { margin-top: 19px; color: #909ba0; font-size: 9px; }
+
+.module-back-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	margin-top: 19px;
+	color: #28786d;
+	font-size: 10px;
+	font-weight: 700;
+}
+
+.module-back-link:hover { color: #174f49; }
+
+@media (max-width: 520px) {
+	.module-page-header { flex-direction: column; gap: 12px; }
+	.module-page-header h1 { font-size: 23px; }
+	.module-placeholder { min-height: 260px; padding: 28px 18px; }
+}

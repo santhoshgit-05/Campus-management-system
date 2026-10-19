@@ -1,0 +1,10 @@
+{
+  "name": "cms",
+  "private": true,
+  "scripts": {
+    "start": "concurrently --kill-others --names backend,frontend --prefix-colors blue,cyan \"npm --prefix backend start\" \"npm --prefix frontend start\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
