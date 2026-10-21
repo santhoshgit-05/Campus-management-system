@@ -1,0 +1,315 @@
+.hostel-page {
+	max-width: 1500px;
+	margin: 0 auto;
+	color: #293d45;
+}
+
+.hostel-page-header,
+.hostel-directory-heading,
+.hostel-modal-header,
+.hostel-modal-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+}
+
+.hostel-page-header {
+	align-items: flex-start;
+	margin-bottom: 13px;
+}
+
+.hostel-eyebrow {
+	color: #71828a;
+	font-size: 9px;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+
+.hostel-page-header h1 {
+	margin-top: 7px;
+	color: #1b3038;
+	font-size: 26px;
+	line-height: 1.25;
+}
+
+.hostel-page-header > div > p:last-child {
+	margin-top: 6px;
+	color: #73818a;
+	font-size: 12px;
+}
+
+.hostel-primary-button,
+.hostel-secondary-button,
+.hostel-danger-button {
+	display: inline-flex;
+	min-height: 36px;
+	align-items: center;
+	justify-content: center;
+	gap: 7px;
+	padding: 0 12px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	font-size: 11px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.hostel-primary-button {
+	border-color: #176b66;
+	color: #fff;
+	background: #176b66;
+}
+
+.hostel-primary-button:hover { background: #125b56; }
+
+.hostel-secondary-button {
+	border-color: #dbe3e6;
+	color: #53656c;
+	background: #fff;
+}
+
+.hostel-secondary-button:hover { background: #f5f8f8; }
+
+.hostel-danger-button {
+	border-color: #b84646;
+	color: #fff;
+	background: #b84646;
+}
+
+.hostel-danger-button:hover { background: #9e3838; }
+
+.hostel-demo-notice {
+	margin-bottom: 17px;
+	color: #73858a;
+	font-size: 10px;
+}
+
+.hostel-feedback {
+	display: flex;
+	min-height: 38px;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	margin-bottom: 12px;
+	padding: 7px 10px;
+	border: 1px solid #cce4d7;
+	border-radius: 5px;
+	color: #28664e;
+	background: #f0f8f3;
+	font-size: 11px;
+}
+
+.hostel-feedback.is-error { border-color: #efcaca; color: #a33b3b; background: #fff5f4; }
+.hostel-feedback button { display: grid; place-items: center; padding: 3px; border: 0; color: inherit; background: transparent; }
+
+.hostel-summary {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.hostel-summary > div {
+	display: flex;
+	min-width: 176px;
+	min-height: 57px;
+	align-items: center;
+	gap: 9px;
+	padding: 9px 12px;
+	border: 1px solid #e1e7eb;
+	border-radius: 5px;
+	background: #fff;
+}
+
+.hostel-summary-icon {
+	display: grid;
+	width: 30px;
+	height: 30px;
+	place-items: center;
+	border-radius: 5px;
+	color: #3d698b;
+	background: #eaf2f7;
+}
+
+.hostel-summary-icon.is-active { color: #26765b; background: #e8f4ed; }
+.hostel-summary > div > span:nth-child(2) { color: #718087; font-size: 10px; }
+.hostel-summary strong { margin-left: auto; color: #293d45; font-size: 18px; }
+
+.hostel-directory {
+	border: 1px solid #e1e7eb;
+	border-radius: 6px;
+	background: #fff;
+}
+
+.hostel-directory-heading {
+	min-height: 62px;
+	padding: 12px 16px;
+	border-bottom: 1px solid #e9edef;
+}
+
+.hostel-directory-heading h2 { color: #30454d; font-size: 13px; }
+.hostel-directory-heading p { margin-top: 4px; color: #87939a; font-size: 9px; }
+
+.hostel-toolbar {
+	display: grid;
+	grid-template-columns: minmax(210px, 1fr) minmax(0, 2.2fr) auto;
+	align-items: center;
+	gap: 9px;
+	padding: 12px 16px;
+	border-bottom: 1px solid #e9edef;
+}
+
+.hostel-search {
+	display: flex;
+	min-width: 0;
+	min-height: 35px;
+	align-items: center;
+	gap: 8px;
+	padding: 0 9px;
+	border: 1px solid #dfe6e8;
+	border-radius: 4px;
+	color: #819096;
+}
+
+.hostel-search:focus-within { border-color: #75aaa2; box-shadow: 0 0 0 2px rgb(23 107 102 / 9%); }
+.hostel-search input { width: 100%; min-width: 0; border: 0; outline: 0; color: #33474e; background: transparent; font-size: 10px; }
+.hostel-search input::placeholder { color: #9aa5aa; }
+
+.hostel-filters {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(110px, 1fr));
+	gap: 7px;
+}
+
+.hostel-filters select,
+.hostel-form-field input,
+.hostel-form-field select,
+.hostel-form-field textarea {
+	width: 100%;
+	min-width: 0;
+	min-height: 35px;
+	padding: 0 9px;
+	border: 1px solid #dfe6e8;
+	border-radius: 4px;
+	color: #43565e;
+	background: #fff;
+	font-size: 10px;
+}
+
+.hostel-filters select:focus,
+.hostel-form-field input:focus,
+.hostel-form-field select:focus,
+.hostel-form-field textarea:focus { border-color: #75aaa2; outline: 2px solid rgb(23 107 102 / 10%); }
+
+.hostel-clear-button {
+	display: inline-flex;
+	min-height: 32px;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	padding: 0 7px;
+	border: 0;
+	color: #39766e;
+	background: transparent;
+	font-size: 9px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.hostel-clear-button:disabled { color: #aab4b8; cursor: default; }
+
+.hostel-table-wrap { width: 100%; overflow-x: auto; }
+.hostel-table { width: 100%; min-width: 1080px; border-collapse: collapse; text-align: left; }
+.hostel-table th { height: 38px; padding: 0 10px; color: #839198; background: #fafbfb; font-size: 8px; font-weight: 800; letter-spacing: 0.3px; text-transform: uppercase; white-space: nowrap; }
+.hostel-table td { height: 57px; padding: 7px 10px; border-top: 1px solid #edf0f1; color: #566970; font-size: 9px; white-space: nowrap; }
+.hostel-table th:first-child, .hostel-table td:first-child { padding-left: 16px; }
+.hostel-table th:last-child, .hostel-table td:last-child { padding-right: 14px; }
+.hostel-table tbody tr:hover { background: #fbfdfd; }
+
+.hostel-name-cell { display: flex; min-width: 175px; align-items: center; gap: 8px; }
+.hostel-avatar { display: grid; width: 29px; height: 29px; flex: 0 0 auto; place-items: center; border-radius: 50%; color: #356e67; background: #e7f1ee; font-size: 9px; font-weight: 800; }
+.hostel-name-cell > span:last-child { display: grid; min-width: 0; gap: 4px; }
+.hostel-name-cell strong { overflow: hidden; color: #344950; font-size: 10px; font-weight: 700; text-overflow: ellipsis; }
+.hostel-name-cell small, .hostel-section { display: block; margin-top: 3px; color: #8a969b; font-size: 8px; }
+.hostel-id-cell { color: #526971 !important; font-weight: 700; }
+.hostel-category-badge, .hostel-status-badge { display: inline-flex; min-height: 21px; align-items: center; gap: 5px; padding: 0 7px; border-radius: 12px; color: #67777d; background: #eff2f3; font-size: 8px; }
+.hostel-category-badge.is-hosteller { color: #59678d; background: #eff0f8; }
+.hostel-status-badge.is-active { color: #347657; background: #eaf5ee; }
+.hostel-status-badge.is-inactive { color: #9a6242; background: #fbf0e8; }
+.hostel-status-badge > span { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+.hostel-row-actions { display: flex; align-items: center; justify-content: flex-end; gap: 2px; }
+.hostel-row-actions button { display: grid; width: 28px; height: 28px; place-items: center; border: 0; border-radius: 4px; color: #718188; background: transparent; }
+.hostel-row-actions button:hover { color: #176b66; background: #edf6f3; }
+.hostel-row-actions button:last-child:hover { color: #a33b3b; background: #fff0ef; }
+.hostel-visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+
+.hostel-empty-state { display: flex; min-height: 240px; flex-direction: column; align-items: center; justify-content: center; padding: 25px; text-align: center; }
+.hostel-empty-state > div { display: grid; width: 40px; height: 40px; place-items: center; border-radius: 50%; color: #71858b; background: #f0f4f4; }
+.hostel-empty-state h3 { margin-top: 12px; color: #3a5058; font-size: 13px; }
+.hostel-empty-state p { max-width: 330px; margin: 6px 0 13px; color: #819096; font-size: 10px; line-height: 1.6; }
+
+.hostel-modal-backdrop { position: fixed; inset: 0; z-index: 100; display: grid; overflow-y: auto; place-items: center; padding: 20px; background: rgb(18 33 39 / 48%); }
+.hostel-modal { width: min(100%, 670px); max-height: calc(100vh - 40px); overflow-y: auto; padding: 20px; border: 1px solid #e2e8e9; border-radius: 7px; background: #fff; box-shadow: 0 18px 60px rgb(22 40 45 / 22%); }
+.hostel-form-modal { width: min(100%, 720px); }
+.hostel-modal-header { margin-bottom: 15px; padding-bottom: 13px; border-bottom: 1px solid #edf0f1; }
+.hostel-modal-header h2 { margin-top: 5px; color: #2d424a; font-size: 17px; }
+.hostel-modal-close { display: grid; width: 32px; height: 32px; place-items: center; border: 1px solid #e2e8e9; border-radius: 5px; color: #67777d; background: #fff; }
+.hostel-modal-close:hover { color: #176b66; background: #f2f8f6; }
+.hostel-required-note { margin-bottom: 12px; color: #7e8d92; font-size: 9px; }
+.hostel-required-note span, .hostel-form-field label span { color: #b34c43; }
+.hostel-form-error { margin-bottom: 12px; padding: 8px 10px; border: 1px solid #efcaca; border-radius: 4px; color: #a33b3b; background: #fff5f4; font-size: 10px; }
+.hostel-form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.hostel-form-field { min-width: 0; }
+.hostel-form-field label { display: block; margin-bottom: 5px; color: #53656c; font-size: 9px; font-weight: 700; }
+.hostel-form-field input, .hostel-form-field select { min-height: 37px; font-size: 10px; }
+.hostel-form-field textarea { min-height: 62px; padding: 9px; resize: vertical; font-size: 10px; }
+.hostel-form-field input::placeholder, .hostel-form-field textarea::placeholder { color: #a0aaae; }
+.hostel-form-field.has-error input, .hostel-form-field.has-error select { border-color: #c45d57; }
+.hostel-field-error { display: block; margin-top: 4px; color: #ad3f3a; font-size: 8px; }
+.hostel-address-field { grid-column: 1 / -1; }
+.hostel-modal-footer { justify-content: flex-end; margin-top: 18px; padding-top: 13px; border-top: 1px solid #edf0f1; }
+
+.hostel-profile-heading { display: flex; align-items: center; gap: 10px; padding: 4px 0 17px; border-bottom: 1px solid #edf0f1; }
+.hostel-avatar.is-large { width: 42px; height: 42px; font-size: 12px; }
+.hostel-profile-heading h3 { color: #344950; font-size: 13px; }
+.hostel-profile-heading p { margin-top: 4px; color: #809096; font-size: 9px; }
+.hostel-profile-heading .hostel-status-badge { margin-left: auto; }
+.hostel-details-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px 20px; padding: 18px 0; }
+.hostel-details-grid dt { color: #869398; font-size: 8px; }
+.hostel-details-grid dd { margin-top: 5px; color: #3c5159; font-size: 10px; overflow-wrap: anywhere; }
+.hostel-confirm-modal { width: min(100%, 410px); text-align: center; }
+.hostel-delete-icon { display: grid; width: 42px; height: 42px; place-items: center; margin: 2px auto 12px; border-radius: 50%; color: #a33b3b; background: #fff0ef; }
+.hostel-confirm-modal h2 { color: #30454d; font-size: 16px; }
+.hostel-confirm-modal > p { margin: 9px 0 18px; color: #73818a; font-size: 10px; line-height: 1.6; }
+.hostel-confirm-modal .hostel-modal-footer { justify-content: center; }
+
+@media (max-width: 1100px) {
+	.hostel-toolbar { grid-template-columns: minmax(0, 1fr) auto; }
+	.hostel-search { grid-column: 1 / -1; }
+	.hostel-filters { grid-template-columns: repeat(2, minmax(120px, 1fr)); }
+}
+
+@media (max-width: 700px) {
+	.hostel-toolbar { grid-template-columns: minmax(0, 1fr); }
+	.hostel-search { grid-column: auto; }
+	.hostel-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.hostel-clear-button { justify-self: start; }
+	.hostel-summary > div { flex: 1 1 150px; }
+}
+
+@media (max-width: 520px) {
+	.hostel-page-header { align-items: flex-start; flex-direction: column; }
+	.hostel-page-header h1 { font-size: 23px; }
+	.hostel-page-header > .hostel-primary-button { align-self: stretch; }
+	.hostel-filters { grid-template-columns: minmax(0, 1fr); }
+	.hostel-directory-heading { padding-right: 12px; padding-left: 12px; }
+	.hostel-toolbar { padding: 10px 12px; }
+	.hostel-modal-backdrop { align-items: end; padding: 8px; }
+	.hostel-modal { max-height: calc(100vh - 16px); padding: 16px; border-radius: 8px 8px 5px 5px; }
+	.hostel-form-grid, .hostel-details-grid { grid-template-columns: minmax(0, 1fr); }
+	.hostel-address-field { grid-column: auto; }
+	.hostel-profile-heading { flex-wrap: wrap; }
+	.hostel-profile-heading .hostel-status-badge { margin-left: 0; }
+	.hostel-modal-footer { flex-wrap: wrap; }
+}

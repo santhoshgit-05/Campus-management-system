@@ -1,4 +1,5 @@
 import { BookOpenCheck, Bus, CalendarDays, ClipboardCheck, House, WalletCards } from "lucide-react";
+import { Link } from "react-router-dom";
 import { DEMO_STUDENT_PROFILES } from "../../config/demoProfiles.js";
 import { useAuth } from "../../context/AuthContext.jsx";
 import "./StudentDashboard.css";
@@ -34,7 +35,8 @@ export default function StudentDashboard() {
 				<section className="student-portal-panel" id="fees"><div className="student-portal-panel-heading"><div><p className="student-portal-kicker">SAMPLE ACCOUNT</p><h2>Fees</h2></div><WalletCards size={18} className="student-panel-icon" /></div><div className="student-fee-status"><span>Current term</span><strong>Paid</strong></div><p className="student-panel-note">Demo fee information only. No payments can be made here.</p></section>
 				<section className="student-portal-panel" id="announcements"><div className="student-portal-panel-heading"><div><p className="student-portal-kicker">SAMPLE NOTICES</p><h2>Announcements</h2></div></div><div className="student-notice"><strong>Library study hours</strong><p>Extended evening hours are planned during midterm week.</p><time>Sample notice · Oct 18</time></div><div className="student-notice"><strong>Student activity fair</strong><p>Club sign-ups will be held at the central quad.</p><time>Sample notice · Oct 21</time></div></section>
 				<section className="student-portal-panel student-campus-panel" id="campus"><div className="student-portal-panel-heading"><div><p className="student-portal-kicker">CAMPUS SERVICES</p><h2>Transport & housing</h2></div><Bus size={18} className="student-panel-icon" /></div><div className="student-campus-service"><Bus size={17} /><div><strong>Shuttle route B</strong><p>North gate · Sample pickup 8:10 AM</p></div></div><div className="student-campus-service"><House size={17} /><div><strong>Maple Hall · Room 214</strong><p>Sample residence assignment</p></div></div><p className="student-panel-note">Sample campus information; confirm schedules with campus staff.</p></section>
-			</div>
-		</main>
+		<section className="student-portal-panel" id="quick-actions"><div className="student-portal-panel-heading"><div><p className="student-portal-kicker">QUICK ACTIONS</p><h2>Shortcuts</h2></div></div><div className="student-quick-actions"><Link to="/timetable">Timetable</Link><Link to="/attendance">Attendance</Link><Link to="/results">Results</Link><Link to="/fees">Fees</Link><Link to="/leave">Leave</Link><Link to="/events">Events</Link><Link to="/transport/find-my-bus">Find My Bus</Link></div></section>
+	</div>
+</main>
 	);
 }

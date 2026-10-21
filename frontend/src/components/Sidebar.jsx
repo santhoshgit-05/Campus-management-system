@@ -20,6 +20,7 @@ import {
 	Settings,
 	Utensils,
 	Users,
+	UserRoundCheck,
 	X,
 } from "lucide-react";
 import "./Sidebar.css";
@@ -38,6 +39,8 @@ const navigationSections = [
 			{ label: "Subjects", path: "/subjects", icon: BookOpen },
 			{ label: "Timetable", path: "/timetable", icon: CalendarDays },
 			{ label: "Attendance", path: "/attendance", icon: ClipboardCheck },
+			{ label: "Faculty Attendance", path: "/faculty-attendance", icon: UserRoundCheck },
+			{ label: "Attendance Reports", path: "/attendance-reports", icon: ChartNoAxesCombined },
 			{ label: "Leave Management", path: "/leave", icon: CalendarClock },
 		],
 	},
@@ -55,6 +58,7 @@ const navigationSections = [
 		label: "Administration",
 		items: [
 			{ label: "Examinations", path: "/examinations", icon: FileText },
+			{ label: "Results", path: "/results", icon: FileText },
 			{ label: "Fees", path: "/fees", icon: CreditCard },
 			{ label: "Placements", path: "/placements", icon: BriefcaseBusiness },
 			{ label: "Complaints", path: "/complaints", icon: MessageSquare },
